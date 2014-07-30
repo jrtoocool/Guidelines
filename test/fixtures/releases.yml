@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  release_date: 2014-07-29
+  done: false
+  guideline_id: 
+
+two:
+  release_date: 2014-07-29
+  done: false
+  guideline_id: 
