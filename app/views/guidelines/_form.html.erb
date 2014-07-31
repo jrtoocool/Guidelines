@@ -15,6 +15,18 @@
     <%= f.label :name %><br>
     <%= f.text_field :name %>
   </div>
+  
+  <div class="field">
+    <%= f.fields_for :releases do |release| %><br>
+    <!-- Render the partial with the releases attributes -->
+    <%= render 'release_fields', :f => release %>
+    <% end %>
+    <div class="links">
+    	<!-- Link that shows up dinamicly the releases fields -->
+	    <%= link_to_add_association 'add release', f, :releases %><br>
+	</div>
+  </div>
+  
   <div class="actions">
     <%= f.submit %>
   </div>

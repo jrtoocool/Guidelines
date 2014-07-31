@@ -1,0 +1,16 @@
+<!-- Partial with the nested form -->
+<div class="nesated-fields">
+	
+	<div class="field">
+	<%= f.label :release_date %><br>
+	<%= f.text_field :release_date %>
+	</div>
+	
+	<div class="field">
+	<%= f.check_box :done %><br>
+	<%= f.label :done %>
+	</div>
+	<!-- Link that dinamicly removes the relaeses fields -->
+	<%= link_to_remove_association "remove task", f %>
+	
+</div>

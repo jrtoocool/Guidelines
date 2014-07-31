@@ -69,6 +69,6 @@ class GuidelinesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def guideline_params
-      params.require(:guideline).permit(:name)
+      params.require(:guideline).permit(:name, :description, releases_attributes: [:id, :name, :done, :_destroy])
     end
 end
