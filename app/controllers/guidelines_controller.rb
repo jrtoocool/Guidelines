@@ -5,6 +5,7 @@ class GuidelinesController < ApplicationController
   # GET /guidelines.json
   def index
     @guidelines = Guideline.all
+    @guidelines_grid = initialize_grid(Guideline)
   end
 
   # GET /guidelines/1

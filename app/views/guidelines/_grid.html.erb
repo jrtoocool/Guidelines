@@ -1,0 +1,11 @@
+<%# show_filters: :when_filtered %>
+<%= grid(@guidelines_grid) do |g|
+
+  g.column  name:  'Name', attribute: 'name' do |guide|
+    guide.name
+  end
+
+  g.column   do |guide|
+    link_to('Edit', edit_guideline_path(guide))
+  end
+end -%>

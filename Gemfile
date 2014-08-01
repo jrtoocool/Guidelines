@@ -16,7 +16,10 @@ gem 'coffee-rails', '~> 4.0.0'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
-
+# jQuery UI assets (JavaScripts, stylesheets, and images) for the Rails asset pipeline.
+gem 'jquery-ui-rails'
+#  Rails grid plugin to create grids with sorting, pagination, and (automatically generated) filters
+gem "wice_grid"
 # Nested forms
 gem 'cocoon'
 
